@@ -9,6 +9,6 @@ jobs:
         with:
           fetch-depth: 0
       - name: Run diff-index
-        run: git diff-index -M -C ${{ github.base_ref }}
+        run: git diff-index -M -C ${{ github.base_ref }} -- ${{ github.workspace }}
 
     
