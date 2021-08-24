@@ -10,8 +10,8 @@ jobs:
           fetch-depth: 0
       - name: Fetch Origin
         run: git fetch origin
-      - name: echo ${{github.base_ref}}
-        run: echo ${{github.base_ref}}
+      - name: show-refs
+        run: git show-ref
       - name: Run diff-index
         run: git diff-index ${{ github.base_ref }} -M -C
 
