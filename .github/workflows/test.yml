@@ -1,6 +1,8 @@
+name: diff-index
+on: pull_request
+
 jobs:
   gather-diff-index:
-    on: [pull_request]
     steps:
       - uses: actions/checkout@v2
         with:
