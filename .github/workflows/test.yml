@@ -11,6 +11,6 @@ jobs:
       - name: Fetch Origin
         run: git fetch origin
       - name: Run diff-index
-        run: git diff-index -M -C "${{ github.base_ref }}"
+        run: git diff-index ${{ github.base_ref }} -M -C
 
     
